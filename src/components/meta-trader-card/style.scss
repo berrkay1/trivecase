@@ -1,0 +1,166 @@
+@import '../../assets/mixins.scss';
+
+.card-body {
+    width: 6.21rem;
+    position: relative;
+    background-color: #FFDD5C;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 6.4rem;
+
+    @include sd {
+        width: 5.4rem;
+        height: 5rem;
+    }
+
+    @include m {
+        width: 100%;
+        height: 2.6rem;
+    }
+
+    &.left {
+        .image {
+            position: absolute;
+            left: -37%;
+            bottom: -32%;
+            z-index: 9;
+
+            @include md {
+                left: -15%;
+                bottom: -30%;
+                height: 4.5rem;
+                width: 4rem;
+            }
+
+            @include sd {
+                left: -15%;
+                bottom: -20%;
+                height: 3.6rem;
+                width: 3.2rem;
+            }
+
+        }
+
+        .text {
+            position: absolute;
+            right: -1%;
+            bottom: -10%;
+
+
+            @include sd {
+                bottom: -8.1%;
+            }
+
+            @include m {
+               bottom: -15.2%;
+            }
+        }
+
+
+    }
+
+    &.right {
+        .image {
+            position: absolute;
+            right: -24%;
+            top: .4rem;
+            z-index: 9;
+
+            @include md {
+                right: -5%;
+                top: 20%;
+                height: 4rem;
+                width: 3rem;
+            }
+
+            @include sd {
+                right: -3%;
+                bottom: -20%;
+                height: 3rem;
+                width: 2.1rem;
+            }
+        }
+
+        .text {
+            position: absolute;
+            left: -1.4%;
+            bottom: -10%;
+
+            @include sd {
+                bottom: -8.1%;
+            }
+
+            @include m {
+               bottom: -15.2%;
+                right: -1%;
+                left: auto;
+            }
+        }
+
+
+        .card-up {
+            .desc {
+                width: 70%;
+
+                @include m {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .card-up {
+        padding: .32rem;
+
+        @include m {
+            padding: .16rem;
+        }
+
+        .title {
+            font-size: .36rem;
+            font-weight: bold;
+            margin-bottom: .16rem;
+            text-align: start;
+
+            @include sd {
+                font-size: .24rem;
+            }
+
+            @include m {
+                font-size: .16rem;
+            }
+        }
+
+        .desc {
+            font-size: .24rem;
+
+            @include sd {
+                font-size: .16rem;
+            }
+
+            @include m {
+                font-size: .14rem;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .text {
+        color: #FFF2C2;
+        font-size: 2rem;
+        font-weight: 900;
+
+        @include md {
+            font-size: 1.6rem;
+        }
+
+        @include sd {
+            font-size: 1rem;
+        }
+    }
+
+
+}

@@ -1,0 +1,108 @@
+@import '../../assets/mixins.scss';
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    padding-top: .3rem;
+
+    .content {
+        display: flex;
+        color: #F4F4F3;
+        font-size: 5.5rem;
+        font-weight: bold;
+        line-height: 3rem;
+        position: relative;
+        z-index: -1;
+
+        @include m {
+            font-size: 2.5rem;
+        }
+    }
+
+    .gold-left {
+        left: 1rem;
+        top: 1rem;
+        position: absolute;
+        width: 2.28rem;
+        height: 2.98rem;
+        z-index: 0;
+
+        @include m {
+            width: 1rem;
+            height: 1.4rem;
+            left: .1rem;
+            top: 1.8rem;
+        }
+    }
+
+    .gold-right {
+        right: .49rem;
+        top: .81rem;
+        width: 3.44rem;
+        height: 4.49rem;
+        position: absolute;
+        z-index: -1;
+        @include m {
+            width: 1rem;
+            height: 1.4rem;
+            top: 1.2rem;
+        }
+    }
+
+    .gold-small {
+        right: 3.33rem;
+        top: 0;
+        width: .36rem;
+        height: .39rem;
+        position: absolute;
+        z-index: -1;
+        @include m {
+           
+            top: 0.6rem;
+            right: 1.4rem;
+        }
+    }
+
+
+
+    .text-container {
+        position: absolute;
+        transform: translateY(-10px);
+        z-index: 9;
+
+        @include m {
+            transform: translateY(-70%);
+            padding-left: 0.24rem;
+            padding-right: 0.24rem;
+        }
+
+        .big-title {
+            font-size: .48rem;
+            font-weight: bold;
+            color: #2A2B23;
+            text-align: center;
+            margin-bottom: .16rem;
+
+            @include m {
+                font-size: .24rem;
+                margin-bottom: .08rem;
+            }
+        }
+
+        .big-desc {
+            font-size: .48rem;
+            color: #2A2B23;
+            font-weight: 400;
+            text-align: center;
+
+            @include m {
+                font-size: .24rem;
+
+            }
+        }
+    }
+}

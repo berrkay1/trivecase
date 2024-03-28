@@ -1,0 +1,180 @@
+@import '../../assets/mixins.scss';
+
+.account-list {
+    background-color: #F7F7F7;
+
+    @include m {
+        height: 10rem;
+    }
+
+    .account-list-container {
+        display: flex;
+        width: 100%;
+        border: 1px solid #DADDDE;
+        border-radius: 0.08rem;
+        background-color: #fff;
+        transform: translateY(-23%);
+
+        @include sd {
+            transform: translateY(-18%);
+        }
+
+        @include m {
+            flex-direction: column;
+        }
+
+
+
+        .form-content {
+            width: 4.44rem;
+            padding: .36rem .32rem;
+            border-right: 1px solid #DADDDE;
+
+            @include m {
+                width: 100%;
+                padding: .24rem;
+                border-right: 0;
+                border-bottom: 1px solid #DADDDE;
+            }
+
+            .table-title {
+                color: #5770EA;
+                font-size: .36rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: .16rem;
+
+                @include m {
+                    font-size: .2rem;
+                }
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                gap: .16rem;
+
+                .input {
+                    display: flex;
+                    flex-direction: column;
+
+                    &.error-message {
+                        input {
+                            border: 1px solid #EA5757;
+                        }
+                    }
+
+                    &.phone {
+                        position: relative;
+
+                        .label {
+                            color: #989898;
+                            font-size: .12rem;
+                            position: absolute;
+                            left: .16rem;
+                            top: .04rem;
+                            opacity: 0.5;
+                        }
+                    }
+
+                    input {
+                        border: 1px solid #F4F4F3;
+                        width: 3.2rem;
+                        outline: none;
+                        width: 100%;
+                        height: 100%;
+                        padding: .16rem;
+                        color: #989898;
+                        font-size: .16rem;
+                        border-radius: .04rem;
+                    }
+
+                    .error-message {
+                        color: #EA5757;
+                        font-size: .12rem !important;
+                        margin-top: .04rem;
+                    }
+                }
+            }
+        }
+
+        .account-items {
+            flex: 1;
+            padding: .36rem .32rem;
+            height: 4.95rem;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                border-radius: 8px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #DADDDE;
+                border-radius: 8px;
+            }
+
+            @include m {
+                padding: .24rem;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+
+                thead {
+                    tr {
+                        th {
+                            color: #393939;
+                            font-size: .16rem;
+                            font-weight: 400;
+
+                        }
+                    }
+                }
+            }
+
+            th,
+            td {
+                text-align: left;
+                padding: .04rem;
+            }
+
+            tbody {
+                tr {
+                    td {
+                        color: #989898;
+                        font-size: .16rem;
+                        font-weight: 400;
+
+                        &.delete {
+                            color: #EA5757;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .info {
+                    color: #989898;
+                    font-size: .16rem;
+                    font-weight: 400;
+                    width: 100%;
+                    display: inline-block;
+                    word-wrap: break-word;
+                    border: 0;
+                }
+            }
+
+            tr td {
+                border-bottom: 1px solid #ddd;
+                /* Sadece satırın alt çizgisini belirler */
+            }
+        }
+    }
+
+}

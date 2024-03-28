@@ -1,0 +1,30 @@
+@import '../../assets/mixins.scss';
+
+.why-fair {
+    background-color: #F7F7F7;
+
+    .content {
+        .title {
+            font-size: 0.48rem;
+            text-align: center;
+            font-weight: bold;
+            line-height: normal;
+            color: #2A2B23;
+            margin-bottom: 0.36rem;
+
+            @include m {
+                font-size: .2rem;
+                margin-bottom: .2rem;
+            }
+        }
+
+        .cards {
+            display: flex;
+            align-items: stretch;
+            gap: .36rem;
+            flex-wrap: wrap;
+        }
+    }
+
+
+}

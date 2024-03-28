@@ -1,0 +1,93 @@
+@import '../../assets/mixins.scss';
+
+.default-text {
+
+    &.fs12 {
+        font-size: .12rem;
+    }
+
+    &.fs14 {
+        font-size: .14rem;
+    }
+
+    &.fs16 {
+        font-size: .16rem;
+    }
+
+    &.fs24 {
+        font-size: .24rem;
+    }
+
+    &.fs36 {
+        font-size: .36rem;
+    }
+
+    &.fs48 {
+        font-size: .48rem;
+    }
+    &.fw300 {
+        font-weight: 300;
+    }
+    &.fw400 {
+        font-weight: 400;
+    }
+
+    &.fw500 {
+        font-weight: 500;
+    }
+
+    &.fw600 {
+        font-weight: 600;
+    }
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    &.fw700 {
+        font-weight: 700;
+    }
+
+    &.cC8CBCC {
+
+        color: #C8CBCC;
+    }
+
+    &.cFFFFFF {
+        color: #fff;
+    }
+
+    &.c2A2B23 {
+        color: #2A2B23;
+    }
+
+    &.normal {
+        line-height: normal;
+    }
+
+    &.lh12 {
+        line-height: 1.2em;
+    }
+
+    &.lh15 {
+        line-height: 1.5em;
+    }
+
+    &.isCenter {
+        text-align: center;
+    }
+
+    @include m {
+        &.mfs12 {
+            font-size: .12rem;
+        }
+
+        &.mfs14 {
+            font-size: .14rem;
+        }
+
+        &.mfs16 {
+            font-size: .16rem;
+        }
+    }
+}

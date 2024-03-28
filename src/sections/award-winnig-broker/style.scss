@@ -1,0 +1,115 @@
+@import '../../assets/mixins.scss';
+
+.award-winning {
+    background-color: #fff;
+    width: 100%;
+    padding: .54rem 0 1.47rem;
+    position: relative;
+
+    .award-content {
+        .title {
+            font-size: .48rem;
+            text-align: center;
+            font-weight: bold;
+            line-height: normal;
+            color: #2A2B23;
+            margin-bottom: .2rem;
+
+            @include m {
+                font-size: .2rem;
+            }
+        }
+
+        .award-text-img-container {
+            position: absolute;
+            top: .5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            z-index: 0;
+
+            img:nth-child(1) {
+                transform: translateX(-6.5%);
+
+                @include m {
+                    transform: translate(-40.5%, 4%);
+
+                }
+            }
+
+            img:nth-child(2) {
+                transform: translate(-8%, -42%);
+
+                @include m {
+                    transform: translate(-41%, -38%);
+                }
+            }
+
+            img:nth-child(3) {
+                transform: translate(-5%, -84%);
+
+                @include m {
+                    transform: translate(-39.5%, -81%);
+                }
+            }
+
+            img:nth-child(4) {
+                transform: translate(-2.5%, -128%);
+
+                @include m {
+                    transform: translate(-41.5%, -126%);
+                }
+            }
+
+            @include m {
+                img {
+                    height: 1.4rem;
+                }
+            }
+        }
+
+        .award-img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .87rem;
+
+            @include m {
+                gap: .2rem;
+            }
+
+            .img-container {
+                width: 4.16rem;
+                height: 4.76rem;
+                position: relative;
+
+                @include m {
+                    width: 1.4rem;
+                    height: 1.6rem;
+                }
+
+                .award-img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .btn-container {
+            margin-top: 1.6rem;
+            display: flex;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+            position: relative;
+            z-index: 9;
+
+        }
+
+    }
+}

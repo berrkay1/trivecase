@@ -1,0 +1,15 @@
+.btn-default {
+    padding: 0.16rem 0.36rem;
+    color: #fff;
+    background-color: #5770EA;
+    border: 0;
+    border-radius: .04rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .18rem;
+
+    &:hover{
+        opacity: .8;
+        transition: 300ms all;
+    }
+}

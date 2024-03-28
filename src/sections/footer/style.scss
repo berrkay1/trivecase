@@ -1,0 +1,21 @@
+@import "../../assets/mixins.scss";
+
+.footer {
+    background-color: #2A2B23;
+
+
+    .text-container {
+        padding: 1.82rem 0 2.21rem;
+        font-size: .12rem;
+        color: #C8CBCC;
+        line-height: 1.5em;
+
+        @include m {
+            padding: 0.8rem 0;
+        }
+
+        span {
+            font-size: .14rem;
+        }
+    }
+}

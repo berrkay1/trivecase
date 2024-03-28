@@ -1,0 +1,55 @@
+@import '../../assets/mixins.scss';
+
+.tools-card-body {
+    background-color: #234A90;
+    height: auto;
+    width: calc((100% - .72rem)/3);
+    padding: .24rem;
+    position: relative;
+    border-radius: .08rem;
+
+    @include sd {
+        width: calc((100% - .36rem)/2);
+    }
+
+    @include m {
+        width: 100%;
+    }
+
+    .tools-iamge {
+        position: absolute;
+        right: .65rem;
+        top: .51rem;
+
+        @include m {
+            width: .6rem;
+            height: .6rem;
+            object-fit: contain;
+            right: .25rem;
+            top: .2rem;
+        }
+    }
+
+    .card-main {
+        margin-top: 1.75rem;
+
+        @include m {
+            margin-top: 1rem;
+        }
+
+        .tools-title {
+            color: #fff;
+            font-size: .36rem;
+            font-weight: bold;
+            margin-bottom: .12rem;
+
+            @include m {
+                font-size: .16rem;
+            }
+        }
+
+        .tools-desc {
+            width: 2.7rem;
+        }
+    }
+}

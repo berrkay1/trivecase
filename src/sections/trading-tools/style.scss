@@ -1,0 +1,48 @@
+@import '../../assets/mixins.scss';
+
+.trading-tools {
+    background-color: #F7F7F7;
+    padding: 1rem 0 .36rem;
+    @include m{
+        padding:.36rem 0 ;
+    }
+    .title{
+        font-size: 0.48rem;
+        text-align: center;
+        font-weight: bold;
+        line-height: normal;
+        color: #2A2B23;
+        margin-bottom: 0.36rem;
+        @include m{
+            font-size: .2rem;
+            margin-bottom: .2rem;
+        }
+    }
+
+    .trading-tools-content {
+
+        display: flex;
+        gap: .2rem;
+        align-items: center;
+        justify-content: space-between;
+
+        @include m {
+            flex-direction: column;
+        }
+    }
+
+    .tools-content {
+        display: flex;
+        gap: .36rem;
+        margin-top: .75rem;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .btn-container {
+        margin-top: .68rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
