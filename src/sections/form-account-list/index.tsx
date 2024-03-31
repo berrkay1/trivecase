@@ -90,7 +90,7 @@ const AccountList = () => {
                                     <div className={'input phone ' + (!!errors.phone ? "error-message" : "")}>
                                         <span className='label'>Phone</span>
                                         <Field name="phone">
-                                            {({ field }: any) => (
+                                            {({ field }:any) => (
                                                 <InputMask
                                                     {...field}
                                                     mask="(999) 999 99 99"
